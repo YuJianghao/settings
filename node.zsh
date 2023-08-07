@@ -1,0 +1,5 @@
+alias s="npm run start"
+alias d="npm run dev"
+alias b="npm run build"
+alias t="npm run test"
+alias p="npm run play"
