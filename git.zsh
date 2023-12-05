@@ -7,16 +7,16 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 
-# create branch from up/master with date prefix mmdd-<branch-name>, e.g. 0807-fix_something
+# create branch from up/master with date prefix mmdd-<branch-name>, e.g. 230807-fix_something
 function gcbmd() {
-    TODAY=$(date +%m%d)
+    TODAY=$(date +%y%m%d)
     BRANCH_NAME=$TODAY-$1
     git checkout -b $BRANCH_NAME up/master
 }
 
-# create branch with date prefix mmdd-<branch-name>, e.g. 0807-fix_something
-function gcbd(){
-    TODAY=$(date +%m%d)
+# create branch with date prefix mmdd-<branch-name>, e.g. 230807-fix_something
+function gcbd() {
+    TODAY=$(date +%y%m%d)
     BRANCH_NAME=$TODAY-$1
     git checkout -b $BRANCH_NAME
 }
