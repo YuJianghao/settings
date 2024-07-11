@@ -21,6 +21,13 @@ function gcbd() {
     git checkout -b $BRANCH_NAME
 }
 
+# create tag with date prefix mmdd-<branch-name>, e.g. 230807-fix_something
+function gbk(){
+    NOW=$(date +"%y%m%d_%H%M%S")
+    TAG_NAME=$NOW-$1
+    git tag $TAG_NAME
+}
+
 # create branch from up/master
 function gcbm() {
     git checkout -b $1 up/master
