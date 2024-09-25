@@ -1,0 +1,17 @@
+{
+    :simlayers {:w-mode {:key :w}}
+    :templates {:open "open -b %s"}
+    :main [
+        {:des "w layer"
+          :rules [
+            [:j [:open "com.tencent.WeWorkMac"] :w-mode]
+            [:m [:open "com.apple.iCal"] :w-mode]
+            [:l [:open "com.google.Chrome"] :w-mode]
+            [:i [:open "com.googlecode.iterm2"] :w-mode]
+            [:k [:open "com.microsoft.VSCodeInsiders"] :w-mode]
+            [:n [:open "com.apple.Notes"] :w-mode]
+            [:o [:open "com.tencent.xinWeChat"] :w-mode]
+            [:h [:open "com.linear"] :w-mode]
+          ]}
+    ]
+}
