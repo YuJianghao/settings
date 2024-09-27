@@ -12,6 +12,7 @@
             [:n [:open "com.apple.Notes"] :w-mode]
             [:o [:open "com.tencent.xinWeChat"] :w-mode]
             [:h [:open "com.linear"] :w-mode]
+            [:u [:open "com.huawei.devecostudio.ds"] :w-mode]
           ]}
     ]
 }
