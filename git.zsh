@@ -1,3 +1,4 @@
+alias lg="lazygit"
 alias gcl="git clone"
 alias gpl="git pull"
 # pull up/master with rebase
